@@ -1,0 +1,292 @@
+/*--------------------------------------------------------------
+# Hero Block
+--------------------------------------------------------------*/
+.hero-left-block {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .hero-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 10.2em 1.5em 3.75em;
+        position: relative;
+        @media only screen and (min-width: 1450px) {
+            padding: 12.8em 8em 8em;
+        }          
+        @media only screen and (max-width: 767px) {
+            padding: 7em 1em 2em;
+        }  
+        &:before {
+            content: "";
+            background-image: url('../images/banner/banner-element-1.png');
+            position: absolute;
+            left: 80px;
+            width: 100px;
+            height: 105px;
+            background-repeat: no-repeat;
+            margin-top: 15px;
+        }
+        &:after {
+            content: "";
+            background-image: url('../images/banner/banner-element-2.png');
+            position: absolute;
+            right: 23%;
+            width: 100px;
+            height: 105px;
+            background-repeat: no-repeat;
+            top: 20%;
+        }
+        .hero-main-title {
+            color: $white;
+            font-size: $heading__one * 1.5;
+            font-weight: 600;
+            @media only screen and (min-width: 1450px) {
+                font-size: $heading__one * 2;
+            }            
+            @media only screen and (max-width: 767px) {
+                font-size: $heading__one;
+            }        
+            @media only screen and (max-width: 450px) {
+                font-size: 36px;
+            }  
+            br {
+                @media only screen and (max-width: 767px) {
+                    display: none;
+                } 
+            }       
+        }
+    }
+    .hero-description {
+        color: $white;
+        font-family: inherit;
+        display: flex;
+        align-items: center;
+        .hero-devider {
+            width: 60px;
+            height: 2px;
+            background: $white;
+            margin: 0 15px;
+            @media only screen and (max-width: 600px) {            
+                width: 30px;
+            } 
+        }
+    }
+    &.hero-block-two {
+        @media only screen and (min-width: 1551px) {
+            height: 110vh;
+        }        
+        @media only screen and (max-width: 1550px) {
+            height: 130vh;
+        }         
+        @media only screen and (max-width: 812px) and (max-height: 375px) {
+            height: 215vh;
+        }  
+        @media only screen and (max-width: 767px) {            
+            height: 110vh;
+        }        
+        @media only screen and (max-width: 600px) {            
+            height: 150vh;
+        } 
+        .hero-content {
+            @media only screen and (min-width: 1551px) {
+                padding: 12.75em 8em 12.75em;
+            }            
+            @media only screen and (max-width: 1550px) {
+                padding: 5em 1.5em 3.75em;
+            }            
+            @media only screen and (max-width: 767px) {
+                padding: 5em 0em 2.75em;
+            }
+        }
+        .video-button-block {
+            @media only screen and (max-width: 767px) {            
+                display: inline-block;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+.hero-right-block {
+    .btn-video {
+        background: $white;
+        color: $matterhorn;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        line-height: 52px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -33px;
+        font-size: 18px;
+    }
+}
+.hero-with-video {
+    @media only screen and (min-width: 768px) {    
+        display: flex;
+        align-items: center;
+    }
+    .btn-video {
+        border: 2px solid $snow;
+        color: $snow;
+        border-radius: 100%;
+        height: 105px;
+        width: 105px;
+        line-height: 90px;
+        font-size: 30px;
+        margin-right: 60px;
+        @media only screen and (max-width: 1500px) {
+            height: 75px;
+            width: 75px;
+            line-height: 60px;
+            font-size: 20px;
+        }
+    }
+}
+/*--------------------------------------------------------------
+# Socail Status
+--------------------------------------------------------------*/
+.social-status {
+    i {
+        margin-right: 5px;
+    }
+    
+}
+
+/*--------------------------------------------------------------
+# Counter Element
+--------------------------------------------------------------*/
+.counter-item {
+    padding: 0 30px;
+    .count-element {
+        width: 77px;
+        height: 77px;
+        margin: auto;
+        > * {
+            margin: 0;
+            text-align: center;
+            line-height: 70px;
+            color: #fff;
+            font-weight: 600;
+        }
+    }    
+    .counter-title {
+        margin-top: 10px;
+    }
+    &.ver-two {
+        .count-element {
+            width: auto;
+            height: auto;
+            > * {
+                color: $matterhorn;
+                line-height: 1.4em;
+                text-align: left;
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+.col-md-auto:first-of-type {
+    .counter-item {
+        padding-left: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# File featured Element
+--------------------------------------------------------------*/
+.file-number {
+    span {
+        font-size: 15px;
+    }
+}
+.file-featured-in {
+    padding: 0 30px;
+}
+.col-md-auto:first-of-type .file-featured-in {
+    padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Card Element
+--------------------------------------------------------------*/
+.about-card {
+    padding: 15px;
+    &.ver-two {
+        padding-bottom: 45px;
+        background: #f8f8ff;
+        border-radius: 3px;
+    }
+}
+.availity-block {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 500;
+    border-width: 3px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.14);   
+    &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        border-radius: 50%;
+        right: 20px;
+        top: 16px;
+    }
+    &.abailable {
+        &:before {
+            background: #00d664;
+        }
+    }   
+    &.away {
+        &:before {
+            background: #faa214;
+        }
+    }   
+    &.busy {
+        &:before {
+            background: #f30f16;
+        }
+    }   
+}
+
+.social-contact {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 0 10px;
+            position: relative;
+            &:after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border-radius: 50%;
+                right: 7px;
+                top: -3px;
+            }
+            &.hangout:after {
+                background: #f30f16;
+            }
+            &.messenger:after {
+                background: #00d664;
+            }
+            &.skype:after {
+                background: #00d664;
+            }
+        }
+    }
+}

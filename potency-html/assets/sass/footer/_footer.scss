@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+.site-footer {
+    overflow: hidden;
+    .footer-top-block {
+        .footer-area {
+            font-family: $font_heading;
+            color: $white;
+            @media only screen and (min-width: 1200px) {
+                display: flex;
+            }
+            p a {
+                color: $harley_davidson_orange;
+            }
+            .footer-left-area {
+                min-width: 60%;
+                padding-right: 5%;
+                padding-left: 5.75%;
+                @media only screen and (min-width: 1500px) {
+                    padding-left: 13.4%;
+                }              
+                @media only screen and (max-width: 1200px) {
+                    min-width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }        
+            .footer-right-area {
+                min-width: 40%;
+                padding-left: 5%;
+                padding-right: 5.75%;
+                @media only screen and (max-width: 1200px) {
+                    min-width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    .footer-social {
+        .social-items {
+            list-style: none;
+            padding: 0;
+            margin-left: -10px;
+            li {
+                display: inline-block;
+                a {
+                    padding: 10px;
+                    display: block;
+                    &:hover {
+                        color: $snow;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-newsletter {
+        .form-group {
+            position: relative;
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+            > i.fa {
+                position: absolute;
+                color: $color__novel;
+                left: 22px;
+                font-size: 14px;
+                top: 18px;
+            }
+        }
+        .form-control {
+            border-radius: 0;
+            padding: 15px 30px 15px 50px;
+            font-size: 14px;
+            display: block;
+            max-width: 60%;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.15);
+            @media only screen and (max-width: 1400px) {
+                max-width: 50%;
+            }
+        }
+        .btn-primary {
+            border-radius: 0;
+            padding: 15px 30px;
+            background: $charcoal;
+            border-color: $charcoal;
+            font-size: 14px;
+            max-width: 40%;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.15);
+            @media only screen and (max-width: 1400px) and (min-width: 768px)  {
+                max-width: 50%;
+            }
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .widget {
+        margin-top: 60px;
+        margin-bottom: 45px;
+        @media only screen and (min-width: 1500px) {
+            margin-top: 75px;
+            margin-bottom: 45px;
+        }       
+        @media only screen and (max-width: 991px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .widget-title {
+            color: $white;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+            word-spacing: 0.25em;
+            margin-bottom: 20px;
+        }
+        .widget-thumb {
+            margin-bottom: 30px;
+        }
+        ul li {
+            line-height: 1.75em;
+            margin-bottom: 15px;
+            a {
+                &:hover {
+                    color: $harley_davidson_orange;
+                }
+            }
+        }
+        p {
+            line-height: 1.875em;
+        }
+    }
+}
+.copyright-text {
+    margin-bottom: 0;
+    color: $darkgray;
+}
+.footer-bottom-block {
+    .copyright-text {
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }     
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            padding-left: 60px;
+        }
+    }
+}
+/*--------------------------------------------------------------
+# Scroll Top
+--------------------------------------------------------------*/
+.topbutton {
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+    background: rgba($harley_davidson_orange, 0.75);
+    display: block;
+    height: 88px;
+    line-height: 95px;
+    text-align: center;
+    width: 90px;
+    transition: all 0.3s;
+    svg {
+        fill: $white;
+    }
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.footer-bottom-block {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}

@@ -1,0 +1,49 @@
+.post-item {
+	.col-lg-6 {
+		&:nth-child(odd) {
+			.post {
+				background: $harley_davidson_orange;
+			}
+		}		
+		&:nth-child(even) {
+			.post {
+				background: $nero;
+			}
+		}
+		.post {
+			padding: 3.75em;
+			margin-bottom: 30px;
+			@media only screen and (max-width: 767px) {
+			    padding: 2em;
+			}
+			.entry-title {
+				color: $white;
+				font-size: $heading__three;
+				margin-bottom: 15px;
+				font-weight: 600;
+			}
+			.entry-content {
+				color: $white;
+			}
+			.entry-footer {
+				.post-author {
+					display: flex;
+					align-items: center;
+					.thumb {
+						margin-right: 1em;
+					}
+					.thumb-details p {
+						margin-bottom: 0;
+						color: $snow;
+						font-family: $font_heading;
+						font-size: 15px;
+					}
+					img {
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+}

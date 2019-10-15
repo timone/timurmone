@@ -1,0 +1,160 @@
+/*--------------------------------------------------------------
+## Hamburger Menu
+--------------------------------------------------------------*/
+.hamburger-content {
+    .menu-block {
+        overflow: hidden;
+        height: 100%;
+        position: relative;
+        padding-bottom: 15px;
+        .mainmenu {
+            list-style: none;
+            margin: 0 0 30px;
+            padding: 0;
+            position: relative;
+            list-style: none;
+            > li {
+                transform: translate3d(0, 30px, 0);
+                transition: opacity 300ms, transform 300ms;
+                transition-delay: 0s, 0s;
+                opacity: 0;
+                &:first-child {
+                    padding-top: 0;
+                }
+                > a {
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 30px;
+                    display: block;
+                    line-height: normal;
+                    .description {
+                        display: block;
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    > .fa-angle-down {
+                        font-size: 15px;
+                    }
+                }
+                .sub-menu {
+                    display: none;
+                    list-style: none;
+                    color: $snow;
+                    padding-left: 0;
+                    margin-left: 0;   
+                    li a {
+                        font-size: 20px;
+                        display: block;
+                        position: relative;
+                        padding-left: 30px;
+                        line-height: normal;
+                        &:before {
+                            content: "";
+                            width: 15px;
+                            height: 1px;
+                            border-top: 1px solid rgba(255, 255, 255, 0.5);
+                            position: absolute;
+                            left: 0;
+                            top: 13px;
+                        }
+                    }
+                }
+            }
+            li {
+                padding-top: 30px;
+                position: relative;
+                .menu-click {
+                    position: absolute;
+                    right: 0;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 38px;
+                    cursor: pointer;
+                    text-align: center;
+                    .menu-arrow.menu-extend {
+                        &:before {
+                            content: "\f068";
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    &.active {
+        .menu-block { 
+            .mainmenu {
+                > li {
+                    opacity: 1;
+                    transform: none;
+                }
+                li a {
+                    &:hover,
+                    &.active {
+                        color: $harley_davidson_orange;
+                    }
+                }
+            }
+        }
+    }
+}
+.hamburger-block {
+    .navigation {
+        .mainmenu {
+            float: none;
+            display: none;
+            > li {
+                float: none;
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: all 0.5s ease-out;
+                display: block;
+                > a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 25px;
+                    .description {
+                        display: block;
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    > .fa-angle-down {
+                        font-size: 15px;
+                    }
+                }
+                .sub-menu {
+                    text-align: center;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    min-width: 100%;
+                    top: -15px;
+                    display: block;
+                    width: 100%;
+                    background: transparent;
+                    li a {
+                        text-align: center;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        padding: 15px;
+                    }
+                }
+                &:hover {
+                    .sub-menu {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        .navigation .mainmenu {
+            display: block;
+        }
+        .navigation .mainmenu > li {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}

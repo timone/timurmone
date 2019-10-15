@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+# Overlay Element
+--------------------------------------------------------------*/
+.overlay-blue-violet-85 {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba($blue_violet ,0.85);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	> div {
+		position: relative;
+	}
+}
+.overlay-blue-violet-45 {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba($blue_violet ,0.45);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	> div {
+		position: relative;
+	}
+}
+.overlay-bg-snow {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba(#fff ,0.95);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
+.overlay-bg-snow-95 {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba(#fff ,0.95);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}

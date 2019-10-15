@@ -1,0 +1,129 @@
+.testimonial-carousel {
+    > .owl-stage-outer > .owl-stage {
+        .owl-item {
+            &:nth-child(odd) {
+                background: $harley_davidson_orange;
+            }           
+            &:nth-child(even) {
+                background: $nero;
+            }
+        }   
+    }
+    .client-thumb img {
+        width: auto;
+    }
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+    }
+    .testimonial-item {
+        padding: 3.75em;
+        @media only screen and (max-width: 767px) {
+            padding: 2em;
+        }
+    }
+    .testimonial-content {
+        color: $white;
+        font-size: 18px;
+    }
+    .testimonial-icon {
+        position: relative;
+        padding-bottom: 3.75em;
+        span {
+            font-size: 8em;
+            line-height: normal;
+            position: absolute;
+            top: -30px;
+            left: -10px;
+            opacity: 0.25;
+        } 
+    }
+    .testimonial-author {
+        margin-top: 30px;
+    }
+    .client-thumb {
+        margin-right: 20px;
+    }
+    .client-details {
+        .client-name {
+            font-weight: 600;
+        }
+        .client-name,
+        .client-desegnation {
+            color: $snow;
+            margin-bottom: 0;
+        }
+    }
+    .owl-dots {
+        @media only screen and (min-width: 992px) {        
+            position: absolute;
+            right: -45px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @media only screen and (max-width: 992px) {      
+            text-align: center;
+            margin-top: 15px;
+        }
+        .owl-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 30px;
+            border: 2px solid $dim_gray;
+            margin: 10px 0;
+            position: relative;
+            display: block;
+            @media only screen and (max-width: 992px) {      
+                display: inline-block;
+                margin: 10px 5px;
+            }
+            &.active {
+                border-color: $white;
+                span {
+                    width: 7px;
+                    height: 7px;
+                    background: $harley_davidson_orange;
+                    border-radius: 30px;
+                    position: absolute;
+                    display: block;
+                    margin: auto;
+                    top: 2px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+    &.ver-two {
+        .owl-dots {
+            position: relative;
+            right: 0;
+            top: 0;
+            transform: translateY(0);
+            text-align: center;
+            display: block;
+            margin-top: 30px;
+            .owl-dot {
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                border-radius: 30px;
+                border: 2px solid $dim_gray;
+                margin: 5px;
+                position: relative;
+                &.active {
+                    span {
+                        width: 7px;
+                        height: 7px;
+                        background: $harley_davidson_orange;
+                        border-radius: 30px;
+                        position: absolute;
+                        display: block;
+                        margin: auto;
+                        top: 2px;
+                        left: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+# blog-single
+--------------------------------------------------------------*/
+.blog-single-page {
+	.post {
+		margin-bottom: 45px;
+	}
+	.entry-meta {
+		padding: 30px 30px 0;
+		li {
+			display: inline-block;
+			padding: 0 20px;
+		}
+		.entry-category a {
+			margin-right: 5px;
+			&:after {
+				content: ",";
+			}
+			&:last-child:after {
+				content: " ";
+			}
+		}
+	}
+	.entry-content {
+		padding: 30px 45px 45px;
+		.entry-title {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+		ul, ol {
+			li {
+				margin-top: 10px;
+				line-height: 1.6em;
+			}
+		}
+		> ul,
+		> ol {
+			padding-left: 20px;
+		}
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		table {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.single-post-footer {
+	.entry-tag a {
+		display: inline-block;
+		border: 2px solid $silver;
+		padding: 10px 20px;
+		border-radius: 30px;
+		font-weight: 500;
+		color: $soft_nero;
+		transition: all 0.35s ease-in-out;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		&:hover {
+			border-style: solid;
+			border-width: 2px;
+			border-color: $white;
+			border-radius: 30px;
+			box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.14);
+			background: $blue_violet;
+			color: $white;
+			padding: 10px 20px;
+		}
+	}
+	.entry-share {
+		margin-top: 45px;
+		.share-head {
+			font-weight: 600;
+			font-size: 16px;
+			color: #000;
+			margin-right: 15px;
+		}
+		.social-item {
+			display: inline-block;
+		}
+		.social-item li {
+			display: inline-block;
+			a {
+				height: 40px;
+				width: 40px;
+				border-width: 3px;
+				line-height: 36px;
+			}
+		}
+	}
+	.post-navigation {
+		margin-top: 60px;
+		> a {
+			padding: 0 25px;
+			i {
+				padding: 0 10px;
+			}
+		}
+		> a .navigation-text {
+			display: inline-block;
+			border: 2px solid $silver;
+			padding: 10px 20px;
+			border-radius: 30px;
+			font-weight: 500;
+			color: $soft_nero;
+			transition: all 0.35s ease-in-out;
+		}
+		a:hover .navigation-text {
+			border-style: solid;
+			border-width: 2px;
+			border-color: $white;
+			border-radius: 30px;
+			box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.14);
+			background: $blue_violet;
+			color: $white;
+			padding: 10px 20px;
+		}
+	}
+}

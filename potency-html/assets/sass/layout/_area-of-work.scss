@@ -1,0 +1,269 @@
+/*--------------------------------------------------------------
+## Service
+--------------------------------------------------------------*/
+.service-item {
+	@media only screen and (min-width: 767px) {
+		display: flex;
+		align-items: center;
+	}
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 45px;
+	}
+	.service-description {
+		position: relative;
+		padding-left: 75px;
+		margin-left: 45px;
+		@media only screen and (max-width: 992px) {
+			padding-left: 50px;
+			margin-left: 30px;
+		}		
+		@media only screen and (max-width: 767px) {
+			margin-left: 0;
+		}
+		&:before {
+			content: "";
+			width: 45px;
+			height: 4px;
+			background: $harley_davidson_orange;
+			position: absolute;
+			left: 0;
+			top: 17px;
+		}
+		.service-title {
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+	}
+	.service-thumb {
+		min-width: 40%;
+		@media only screen and (max-width: 767px) {
+			min-width: 100%;
+			margin-bottom: 30px;
+		}
+		img {
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+	.service-description {
+		min-width: 60%;
+		@media only screen and (max-width: 767px) {
+			min-width: 100%;
+		}
+	}
+}
+.service-box {
+	text-align: center;
+	background: #1a1a1a;
+	padding: 135px 45px;
+	min-height: 360px;
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: "";
+		background: #41eba1;
+		width: 185px;
+		height: 185px;
+		position: absolute;
+		border-radius: 100%;
+		z-index: 0;
+		top: -30%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.service-icon {
+		svg {
+			fill: $snow;
+		}
+	}
+	.service-name {
+		color: $white;
+		margin: 35px 0 0;
+	}
+	.service-title {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+}
+.service-carousel {
+	.owl-item.center {
+		.service-box {
+			&:before {
+				background: transparent;
+			}
+			&:after {
+				content: "";
+				background: #fa3f6b;
+				width: 185px;
+				height: 185px;
+				position: absolute;
+				border-radius: 100%;
+				z-index: 0;
+				bottom: -30%;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+			.service-title {
+				top: 10%;
+			}
+		}
+	}
+	.owl-dots {
+		text-align: center;
+		margin-top: 45px;
+	    .owl-dot {
+	        width: 15px;
+	        height: 15px;
+	        display: inline-block;
+	        border-radius: 30px;
+	        border: 2px solid $dim_gray;
+	        margin: 5px;
+	        position: relative;
+	        &.active {
+	            border-color: $white;
+	            span {
+	                width: 7px;
+	                height: 7px;
+	                background: $harley_davidson_orange;
+	                border-radius: 30px;
+	                position: absolute;
+	                display: block;
+	                margin: auto;
+	                top: 2px;
+	                left: 2px;
+	            }
+	        }
+	    }
+	}
+}
+/*--------------------------------------------------------------
+## Team
+--------------------------------------------------------------*/
+.team-item {
+	margin-bottom: 5px;
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+	}	
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+	.team-description {
+		position: relative;
+		padding-left: 75px;
+		margin-left: 35px;
+		@media only screen and (max-width: 992px) {
+			padding-left: 50px;
+			margin-left: 30px;
+		}
+		&:before {
+			content: "";
+			width: 45px;
+			height: 4px;
+			background: $harley_davidson_orange;
+			position: absolute;
+			left: 0;
+			top: 17px;
+		}
+		.team-title {
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+	}
+	.team-thumb {
+		@media only screen and (max-width: 767px) {
+			min-width: 100%;
+			margin-bottom: 30px;
+		}
+		img {
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+	.team-content {
+		color: $gray;
+	}
+}
+
+/*--------------------------------------------------------------
+## Progress Bar
+--------------------------------------------------------------*/
+.skill-bar {
+    margin-bottom: 45px;
+}
+.progress-title-holder {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.progress-mark span, 
+.progress-title-holder {
+    color: #0d1422;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.progress-title {
+    z-index: 100;
+}
+.progress-wrapper {
+    width: 100%;
+    z-index: 10;
+}
+.progress-mark {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    span.percent {
+        color: $soft_black;
+    }
+}
+
+.progress-content {
+    background-color: $harley_davidson_orange;
+    width: 0%;
+}
+.progress-outter {
+    background-color: $white_smoke;
+}
+.progress-content, .progress-outter {
+    height: 6px;
+}
+
+/*--------------------------------------------------------------
+## Subscriber Block
+--------------------------------------------------------------*/
+.mail-subscribe-block {
+	text-align: center;
+	.form-control {
+		padding: 15px 30px;
+		border-radius: 30px;
+	}
+	.newsletter-btn {
+		padding: 15px 30px;
+		border-radius: 30px;
+		border: 0 none;
+		font-size: 16px;
+		font-weight: 600;
+	}	
+}
+
+/*--------------------------------------------------------------
+## Featured On Block
+--------------------------------------------------------------*/
+.company-content {
+	img {
+		display: block;
+		margin: auto;
+	}
+	a {	
+		@media only screen and (max-width: 992px) {
+		    margin-bottom: 45px;
+		    display: block;
+		}
+	}
+}
